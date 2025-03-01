@@ -1,54 +1,27 @@
-<html>
-    <head>
-        <title>Mini-reddit</title>
-        <style>
-            body{
-                background-color: whitesmoke;
-            }
-            .topbar{
-                display:flexbox;
-                background-color: brown;
-                
-            }
-            #title{
-                text-align: center;
-                display:flex;
-            }
-           .homeLink{
-            color: black;
-            margin: 4rem;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-           }
-           .sidebar{
-            width: 200px;
-            height: 500px;
-            display:flex;
-            background-color: brown;
-           }
-           .postclass{
-            color: black;
-           }
-           .viewpostClass{
-            color: black;
-           }
-        </style>
-    </head>
-    <body>
-        <nav class="topbar">
-           <span>
-            <div id="title"><h2>Mini-reddit</h2></div>
-            <a class="homeLink" href="home">Home</a> 
-           </span>          
-        </nav>
-        <nav class="sidebar">
-           <div class="contents">
-            <a class="postclass" href="post"><h1>create post</h1></a>
-            <a  class="viewpostClass" href="view-post"><h1>view all post</h1></a>
-        
-           </div>
-                
-            
-            
-        </nav>
-    </body>
+  <title>Mini-Reddit</title>
+
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="topbarNav">
+    <div id="title"><h1>Mini-Reddit</h1></div>
+    <div><img src="Assets/mini-redditLogo.webp" alt="" width="100px" height="100px"></div>
+  </div>
+  <div class="secontNavbar">
+    <div>
+      <a href="home" id="home">Home</a>
+      <label for="search"></label>
+      <input type="text">
+    </div>
+  </div>
+  </div>
+</body>
 </html>
