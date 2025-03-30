@@ -1,42 +1,96 @@
-.topbarNav{
-    display: flex;
-    background-color: darkcyan;
-    margin-left: 50px;
-}
 
-
-.main{
+  
+  body {
+    background-color: #f6f7f8;
+    color: #333;
     display: flex;
-    flex-direction:row;
-    gap: 20px;
-    background-color: whitesmoke;
-    width: 80%;
-    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .topbarNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ff4500;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  .topbarNav h1 {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .topbarNav img {
+    border-radius: 50%;
+  }
+  
+  .main {
+    display: flex;
     justify-content: center;
-    padding: 2rem;
-    margin-inline-start: 20px;
-    
-}
-#name{
-    width: 300px;
-    height: 40px;
-    gap: 2px;   
-}
-
-#content{
-    width: 400px;
+    gap: 20px;
+    width: 80%;
+    margin-top: 20px;
+  }
+  
+  #lefside, .rightside {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #lefside {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .rightside {
+    flex: 2;
+    min-height: 300px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  textarea {
     height: 100px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align:auto;
-}
-
-
-#viewPost{
-
-}
-
-.rightside{
- width: 500px;
- height: 500px;
-    background-color:darkgrey;
-}
+    resize: none;
+  }
+  
+  button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e03e00;
+  }
+  
+  #viewPost {
+    background: white;
+    padding: 15px;
+    min-height: 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,3 +1,50 @@
-body{
-    background-color: darkcyan;
+/* body{
+    background-color: darkgray;
 }
+
+.post-container {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.post {
+    margin-bottom: 10px;
+}
+
+.comment-section {
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.comment-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.comment-input {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.comment-list {
+    margin-top: 10px;
+}
+
+.comment {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.comment-timestamp {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.no-comments {
+    color: #888;
+    font-style: italic;
+} */

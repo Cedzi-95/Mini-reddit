@@ -37,7 +37,7 @@ if (!titleInput || !postContent || !button || !viewPosts){
     console.log('-textarea or input with id="content"');
     console.log('-button with id="button"');
     console.log('-Container element with id="viewPost"');
-    return; //exit the function if elements are missing
+    return;
 }
 
 button.addEventListener('click', () => {
@@ -46,14 +46,12 @@ button.addEventListener('click', () => {
     return;
    }
 
-   //create unique ID for the post
    let postId = Date.now().toString();
    let post = new Post(titleInput.value, postContent.value, postId);
 
    allPosts.push(post);
    renderPost();
 
-   //clear input fields after posting
    titleInput.value = '';
    postContent.value = '';
 });
@@ -152,60 +150,5 @@ function renderComments(post, commentList){
 }
 renderPost();
 }
-// Add some basic CSS to make it look better
-function addStyles() {
-    const style = document.createElement('style');
-    style.textContent = `
-        .post-container {
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-        }
-        
-        .post {
-            margin-bottom: 10px;
-        }
-        
-        .comment-section {
-            margin-top: 10px;
-            border-top: 1px solid #eee;
-            padding-top: 10px;
-        }
-        
-        .comment-form {
-            display: flex;
-            margin-bottom: 10px;
-        }
-        
-        .comment-input {
-            flex-grow: 1;
-            padding: 5px;
-            margin-right: 10px;
-        }
-        
-        .comment-list {
-            margin-top: 10px;
-        }
-        
-        .comment {
-            padding: 5px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .comment-timestamp {
-            font-size: 0.8em;
-            color: #888;
-        }
-        
-        .no-comments {
-            color: #888;
-            font-style: italic;
-        }
-    `;
-    document.head.appendChild(style);
-}
-//call the functions
-addStyles();
 main();
 
